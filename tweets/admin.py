@@ -8,6 +8,7 @@ class TweetAdmin(admin.ModelAdmin):
     list_display = (
         "payload",
         "user",
+        "like_count",
     )
 
     search_fields = (

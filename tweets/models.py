@@ -15,6 +15,9 @@ class Tweet(CommonModel):
     def __str__(self):
         return self.payload
 
+    def like_count(self):
+        return self.likes.count()
+
 
 class Like(CommonModel):
     """Like Model Definition"""

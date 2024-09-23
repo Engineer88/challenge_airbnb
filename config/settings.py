@@ -29,7 +29,11 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-CUSTOM_APPS = ["users.apps.UsersConfig"]
+CUSTOM_APPS = [
+    "users.apps.UsersConfig",
+    "tweets.apps.TweetsConfig",
+    "common.apps.CommonConfig",
+]
 
 SYSTEM_APPS = [
     "django.contrib.admin",
